@@ -12,13 +12,13 @@ body {
 
 h2,
 h3 {
-  color: #00a2c6;
+  color: #FFC5D3;
 }
 
 footer {
   padding: 20px;
   color: white;
-  background-color: #00a2c6;
+  background-color: #FFC5D3;
 
   text-align: center;
   font-weight: bold;
@@ -76,7 +76,7 @@ nav li {
 }
 
 nav {
-  background-color: #00a2c6;
+  background-color: #FFC5D3;
   padding: 5px;
 
   position: sticky;
