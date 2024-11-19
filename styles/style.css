@@ -31,6 +31,18 @@ header p {
   font-size: 1rem;
 }
 
+/* Navigasi tetap di atas */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FF577F;
+  padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Navigasi */
 nav ul {
   list-style-type: none;
