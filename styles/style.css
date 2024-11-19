@@ -87,14 +87,16 @@ aside {
   border-left: 5px solid #FF8BA7;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  max-width: 45%; /* Membatasi lebar aside agar tidak terlalu besar */
+  max-width: 45%; /* Ukuran aside agar tidak terlalu besar */
+  overflow: hidden; /* Pastikan tidak ada overflow di aside */
 }
 
 /* Gambar */
 article img {
-  width: 100%; /* Gambar akan menyesuaikan lebar kontainer */
-  height: auto; /* Tinggi disesuaikan agar proporsional */
-  max-width: 90%; /* Mengatur gambar agar lebih kecil dan tidak keluar dari kontainer */
+  width: 100%;  /* Gambar akan mengisi lebar kontainer */
+  height: auto; /* Tinggi gambar disesuaikan agar tetap proporsional */
+  max-width: 100%; /* Pastikan gambar tidak lebih lebar dari kontainer */
+  object-fit: contain;  /* Menjaga gambar tetap dalam kontainer tanpa terpotong */
   border-radius: 10px;
   margin-bottom: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -160,5 +162,7 @@ footer {
     border-left: none;
     border-top: 5px solid #FF8BA7;
   }
+}
+
 }
 
