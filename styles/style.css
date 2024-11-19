@@ -89,6 +89,7 @@ aside {
   border-radius: 5px;
   position: sticky; /* Membuat aside tetap di tempat saat scroll */
   top: 20px; /* Menjaga posisi atas aside agar tetap terlihat */
+  height: 100%;
 }
 
 /* Gambar */
