@@ -1,114 +1,87 @@
-
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Quicksand', sans-serif;
-
   margin: 0;
   padding: 0;
 }
 
-h2,
-h3 {
-  color: #FFC5D3;
+body {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
+  margin: 0;
 }
 
-footer {
+header {
+  text-align: center;
   padding: 20px;
-  color: white;
   background-color: #FFC5D3;
-
-  text-align: center;
-  font-weight: bold;
-}
-
-nav a {
-  font-size: 18px;
-
-  font-weight: 400;
-  text-decoration: none;
-
   color: white;
 }
 
-nav a:hover {
-  font-weight: bold;
-}
-
-.profile header {
-  text-align: center;
-}
-
-.featured-image {
-  width: 100%;
-  max-height: 300px;
-
-  object-fit: cover;
-  object-position: center;
-}
-
-.profile img {
-  max-width: 200px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-
-  padding: 20px;
-  margin-top: 20px;
-}
-
-.jumbotron {
-  font-size: 20px;
-  padding: 60px;
-  background-color: #00c8eb;
-  text-align: center;
-  color: white;
+nav ul {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
 }
 
 nav li {
   display: inline;
-  list-style-type: none;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
-nav {
-  background-color: #FFC5D3;
-  padding: 5px;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  position: sticky;
-  top: 0;
+nav a:hover {
+  text-decoration: underline;
 }
 
 main {
+  display: flex;
+  flex-wrap: wrap;
   padding: 20px;
-
-  overflow: auto;
+  background-color: #F9F9F9;
 }
 
 #content {
-  float: left;
-  width: 75%;
+  flex: 3;
+  margin-right: 20px;
 }
 
 aside {
-  float: right;
-  width: 25%;
-
-  padding-left: 20px;
+  flex: 1;
+  background-color: #FFF;
+  padding: 20px;
+  border-left: 2px solid #FFC5D3;
 }
 
-header {
-  display: inline;
+article img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1000px) {
-  #content,
-  aside {
-    width: 100%;
-    padding: 0;
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #FFC5D3;
+  color: white;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  #content {
+    margin-right: 0;
   }
 }
