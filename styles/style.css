@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header dan Navigasi */
+/* Header */
 header {
   text-align: center;
   padding: 40px 20px;
@@ -21,11 +21,14 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigasi (Sticky di atas) */
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   background-color: #FF577F;
-  padding: 10px 20px;
+  padding: 10px 0;
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -58,6 +61,7 @@ nav a:hover {
 
 /* Konten Artikel */
 #content {
+  margin-top: 70px;  /* Menghindari konten tertutup navbar */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -120,4 +124,3 @@ footer {
     align-items: center;
   }
 }
-
