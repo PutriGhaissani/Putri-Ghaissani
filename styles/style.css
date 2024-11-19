@@ -78,12 +78,15 @@ aside {
 }
 
 article img {
-  max-width: 300px; /* Ukuran maksimum gambar */
-  width: 100%; /* Responsif untuk ukuran kecil */
+  max-width: 250px; /* Ukuran maksimal lebih kecil */
+  width: 100%; /* Responsif untuk layar lebih kecil */
   height: auto; /* Menjaga proporsi gambar */
-  display: block; /* Menjadikan elemen blok */
+  display: block; /* Menjadikan gambar elemen blok */
   margin: 10px auto; /* Agar gambar di tengah */
+  border-radius: 8px; /* Estetika sudut membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
 }
+
 
 
 /* Teks */
