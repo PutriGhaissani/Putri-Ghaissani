@@ -9,7 +9,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   line-height: 1.6;
   margin: 0;
-  background-color: #f8f9fa;
+  background-color: #F3E2D2;
   color: #333;
 }
 
@@ -71,9 +71,9 @@ nav a:hover {
 /* Main Layout */
 main {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 #content {
@@ -93,7 +93,7 @@ aside {
 
 /* Gambar */
 article img {
-  width: 50vw; /* Mengurangi ukuran gambar menjadi 70% dari lebar kontainer */
+  width: 50vw; /* Mengurangi ukuran gambar menjadi 50% dari lebar kontainer */
   height: auto; /* Tinggi tetap proporsional */
   border-radius: 10px;
   margin-bottom: 15px;
@@ -114,7 +114,6 @@ aside img {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* Teks */
 h2 {
@@ -164,16 +163,28 @@ footer {
 }
 
 /* Responsivitas */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   main {
     flex-direction: column;
   }
 
   aside {
+    max-width: 100%; /* Menyesuaikan dengan layar lebih kecil */
+    margin-left: 0;
     border-left: none;
     border-top: 5px solid #FF8BA7;
   }
 }
 
-}
+@media (max-width: 768px) {
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  main {
 
