@@ -91,15 +91,11 @@ aside {
 
 /* Gambar */
 article img {
-  width: 100%; /* Menjaga lebar gambar 100% */
-  max-width: 350px; /* Maksimum lebar gambar */
-  height: auto; /* Tinggi proporsional */
+  max-width: 100px;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Teks */
