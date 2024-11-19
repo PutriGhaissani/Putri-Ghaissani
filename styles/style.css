@@ -81,15 +81,16 @@ main {
 }
 
 aside {
-  flex: 1;
+  flex: 0 0 25%; /* Mengatur lebar aside menjadi 25% dari ruang utama */
   background-color: white;
-  padding: 20px;
+  padding: 15px; /* Mengurangi padding di dalam aside */
   border-left: 5px solid #FF8BA7;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   position: sticky; /* Membuat aside tetap di tempat saat scroll */
   top: 20px; /* Menjaga posisi atas aside agar tetap terlihat */
   height: 100%;
+  max-width: 300px; /* Menambahkan batasan lebar max */
 }
 
 /* Gambar */
@@ -160,5 +161,7 @@ footer {
   aside {
     border-left: none;
     border-top: 5px solid #FF8BA7;
+    max-width: none; /* Menghilangkan max-width pada layar kecil */
+    flex: 1 0 100%; /* Membuat aside lebar penuh di layar kecil */
   }
 }
