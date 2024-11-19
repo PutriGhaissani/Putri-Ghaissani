@@ -1,150 +1,123 @@
-/* Aturan Umum */
+/* Gaya Umum */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   font-family: 'Quicksand', sans-serif;
-  line-height: 1.6;
   margin: 0;
-  background-color: #f8f9fa;
+  padding: 0;
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
-/* Header */
+/* Header dan Navigasi */
 header {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
   background-color: #FF8BA7;
   color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #FF577F;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header p {
-  font-size: 1rem;
-}
-
-/* Navigasi */
 nav ul {
   list-style-type: none;
-  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
-  display: inline;
-  margin-right: 15px;
+  margin: 0 15px;
 }
 
 nav a {
-  color: white;
   text-decoration: none;
+  color: white;
   font-weight: bold;
+  font-size: 18px;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: #FF577F;
   transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #FF8BA7;
+  background-color: #FFC5D3;
 }
 
-/* Main Layout */
-main {
+/* Konten Artikel */
+#content {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+article {
+  width: 48%;
+  margin-bottom: 20px;
   padding: 20px;
-}
-
-#content {
-  flex: 3;
-}
-
-aside {
-  flex: 1;
   background-color: white;
-  padding: 20px;
-  border-left: 5px solid #FF8BA7;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
 }
 
 article img {
-  max-width: 100px; /* Ukuran maksimal lebih kecil */
-  width: 100%; /* Responsif untuk layar lebih kecil */
-  height: auto; /* Menjaga proporsi gambar */
-  display: block; /* Menjadikan gambar elemen blok */
-  margin: 10px auto; /* Agar gambar di tengah */
-  border-radius: 8px; /* Estetika sudut membulat */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
-/* Teks */
-h2 {
-  color: #FF577F;
-  margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 15px;
-}
-
-section h3 {
+/* Konten Samping (Aside) */
+aside {
+  width: 30%;
+  padding-left: 20px;
   margin-top: 20px;
-  color: #FF8BA7;
-}
-
-/* Tabel */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-
-table th, table td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
-}
-
-table th {
-  background-color: #FF8BA7;
-  color: white;
-}
-
-table td {
-  background-color: #f9f9f9;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 10px 20px;
+  padding: 20px;
   background-color: #FF8BA7;
   color: white;
   margin-top: 20px;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsivitas */
 @media (max-width: 768px) {
-  main {
+  #content {
     flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    width: 90%;
   }
 
   aside {
-    border-left: none;
-    border-top: 5px solid #FF8BA7;
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
