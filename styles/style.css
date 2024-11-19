@@ -94,7 +94,7 @@ aside {
 
 /* Gambar */
 article img {
-  width: 100%; /* Gambar akan mengisi 100% lebar kontainer */
+  width: 50vw; /* Gambar akan mengisi 100% lebar kontainer */
   height: auto; /* Menjaga rasio gambar tetap proporsional */
   border-radius: 10px;
   margin-bottom: 15px;
