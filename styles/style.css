@@ -78,7 +78,7 @@ aside {
 }
 
 article img {
-  max-width: 250px; /* Ukuran maksimal lebih kecil */
+  max-width: 100px; /* Ukuran maksimal lebih kecil */
   width: 100%; /* Responsif untuk layar lebih kecil */
   height: auto; /* Menjaga proporsi gambar */
   display: block; /* Menjadikan gambar elemen blok */
