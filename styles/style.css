@@ -1,3 +1,4 @@
+/* Aturan Umum */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,19 +9,32 @@ body {
   font-family: 'Quicksand', sans-serif;
   line-height: 1.6;
   margin: 0;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
+/* Header */
 header {
   text-align: center;
   padding: 20px;
-  background-color: #FFC5D3;
+  background-color: #FF8BA7;
   color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+}
+
+/* Navigasi */
 nav ul {
   list-style-type: none;
-  margin: 10px 0;
-  padding: 0;
+  padding: 10px 0;
 }
 
 nav li {
@@ -32,56 +46,102 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #FF577F;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #FF8BA7;
 }
 
+/* Main Layout */
 main {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   padding: 20px;
-  background-color: #F9F9F9;
 }
 
 #content {
   flex: 3;
-  margin-right: 20px;
 }
 
 aside {
   flex: 1;
-  background-color: #FFF;
+  background-color: white;
   padding: 20px;
-  border-left: 2px solid #FFC5D3;
+  border-left: 5px solid #FF8BA7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
+/* Gambar */
 article img {
-  max-width: 100px;
+  max-width: 100%;
   height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Teks */
+h2 {
+  color: #FF577F;
   margin-bottom: 10px;
 }
 
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #FFC5D3;
+p {
+  margin-bottom: 15px;
+}
+
+section h3 {
+  margin-top: 20px;
+  color: #FF8BA7;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #FF8BA7;
   color: white;
 }
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+table td {
+  background-color: #f9f9f9;
 }
 
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #FF8BA7;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivitas */
 @media (max-width: 768px) {
   main {
     flex-direction: column;
   }
 
-  #content {
-    margin-right: 0;
+  aside {
+    border-left: none;
+    border-top: 5px solid #FF8BA7;
   }
 }
+
