@@ -21,7 +21,7 @@ header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Navigasi (Sticky di atas) */
+/* Navigasi fixed di atas */
 nav {
   position: fixed;
   top: 0;
@@ -61,7 +61,7 @@ nav a:hover {
 
 /* Konten Artikel */
 #content {
-  margin-top: 70px;  /* Menghindari konten tertutup navbar */
+  margin-top: 90px;  /* Menghindari konten tertutup navbar */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -78,10 +78,10 @@ article {
 }
 
 article img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px 0;
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  margin-top: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
