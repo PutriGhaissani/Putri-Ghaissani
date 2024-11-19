@@ -91,7 +91,7 @@ aside {
 
 /* Gambar */
 article img {
-  max-width: 500px; /* Ukuran gambar lebih sedang */
+  max-width: 800px; /* Ukuran gambar lebih sedang */
   height: auto; /* Tinggi tetap proporsional */
   border-radius: 10px;
   margin-bottom: 15px;
