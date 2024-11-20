@@ -93,7 +93,7 @@ aside {
 
 /* Gambar */
 article img {
-  width: 80%; /* Mengurangi ukuran gambar menjadi 50% dari lebar kontainer */
+  width: 400px; /* Mengurangi ukuran gambar menjadi 50% dari lebar kontainer */
   height: auto; /* Tinggi tetap proporsional */
   border-radius: 10px;
   margin-bottom: 15px;
